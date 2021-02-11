@@ -1,0 +1,53 @@
+---
+- src: https://github.com/yetu/ansible-apt.git
+  version: b794e9f515874901134c9d727fd634f090a6c7a4
+
+
+
+#
+## With the collection name, version, and source options
+#- name: my_namespace.my_other_collection
+#  version: 'version range identifiers (default: ``*``)'
+#  source: 'The Galaxy URL to pull the collection from (default: ``--api-server`` from cmdline)'
+
+## from GitHub
+#- src: https://github.com/bennojoy/nginx
+#
+## from GitHub, overriding the name and specifying a specific tag
+#- src: https://github.com/bennojoy/nginx
+#  version: master
+#  name: nginx_role
+#
+## from a webserver, where the role is packaged in a tar.gz
+#- src: https://some.webserver.example.com/files/master.tar.gz
+#  name: http-role
+#
+## from Bitbucket
+#- src: git+http://bitbucket.org/willthames/git-ansible-galaxy
+#  version: v1.4
+#
+## from Bitbucket, alternative syntax and caveats
+#- src: http://bitbucket.org/willthames/hg-ansible-galaxy
+#  scm: hg
+#
+## from GitLab or other git-based scm
+#- src: git@gitlab.company.com:mygroup/ansible-base.git
+#  scm: git
+#  version: "0.1"  # quoted, so YAML doesn't parse this as a floating-point value
+#
+#
+#  #  - {role: robertdebock.bootstrap,  tags: ansible }
+#  - {role: ansible-apt,             tags: apt, when: ansible_os_family == 'Debian' }
+#  - {role: bootstrap,               tags: ansible }
+#  - {role: lcm,                     tags: ansible }
+#  - {role: lvm,                     tags: lvm }
+#  - {role: ajsalminen.hosts,        tags: network }
+##  - {role: ansible-hostname,        tags: hostname }
+#  - {role: Stouts.sudo,             tags: sudo }
+#  - {role: knopki.locale,           tags: locale }
+##  - {role: manala.motd,             tags: motd }
+#  - {role: alias,                   tags: alias }
+#  - {role: marcelnijenhof.firewalld,tags: network, when: ansible_os_family == 'RedHat' }
+#  - {role: c2platform.platform.monit, tags: monitoring, when: monit_enabled|default(False) }
+#  - {role: c2platform.test.swid, tags: swid }
+#  - {role: cacerts, tags: ssl }#

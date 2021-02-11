@@ -1,0 +1,2 @@
+roles/external/*
+collections/ansible_collections/*

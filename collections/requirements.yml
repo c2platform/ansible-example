@@ -1,0 +1,7 @@
+---
+collections:
+- name: https://github.com/c2platform/ansible-collection-core.git
+  version: v1.0.0
+  type: git
+  #source: https://github.com/c2platform/ansible-collection-core.git
+
